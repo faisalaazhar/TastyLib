@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       alert('Recipe shared successfully!');
       form.reset();
-      window.location.href = 'recipe-post.html';
+      window.location.href = 'recipe-post';
     } catch (err) {
       console.error('Error saving recipe:', err);
       alert('Failed to share recipe. Please try again.');
