@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>TastyLib - Tasy Food | Blog Post</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico" />
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <i class="circle-preloader"></i>
+      <img src="img/core-img/salad.png" alt="" />
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+      <!-- Close Btn -->
+      <div class="close-btn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form action="#" method="post">
+              <input
+                type="search"
+                name="search"
+                placeholder="Type any keywords..."
+              />
+              <button type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <div class="delicious-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container">
+            <!-- Menu -->
+            <nav
+              class="classy-navbar justify-content-between"
+              id="deliciousNav"
+            >
+              <!-- Logo -->
+              <a class="nav-brand" href="index.html"
+                ><img src="img/core-img/logo.png" alt=""
+              /></a>
+
+              <!-- Navbar Toggler -->
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"
+                  ><span></span><span></span><span></span
+                ></span>
+              </div>
+
+              <!-- Menu -->
+              <div class="classy-menu">
+                <!-- close btn -->
+                <div class="classycloseIcon">
+                  <div class="cross-wrap">
+                    <span class="top"></span><span class="bottom"></span>
+                  </div>
+                </div>
+
+                <!-- Nav Start -->
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="receipe-post.html">Receipies</a></li>
+                    <li class="active">
+                      <a href="blog-post.html">Blog Post</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                  </ul>
+
+                  <!-- Newsletter Form -->
+                  <div class="search-btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                  <div
+                    id="user-btn"
+                    class="user-btn classynav"
+                    style="display: none"
+                  >
+                    <ul>
+                      <li>
+                        <i class="fa fa-user fa-2x"></i>
+                        <ul class="dropdown">
+                          <li>
+                            <p
+                              id="userdropdown-name"
+                              style="
+                                padding: 0 10px;
+                                font-weight: bold;
+                                font-size: 18px;
+                              "
+                            ></p>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="profile.html"
+                              >My Profile</a
+                            >
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#" id="logout-btn"
+                              >Logout</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="user-signin-btn" class="user-signin-btn">
+                    <a href="signin-signup.html" class="btn-singin">SIGNIN</a>
+                  </div>
+                </div>
+                <!-- Nav End -->
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div
+      class="breadcumb-area bg-img bg-overlay"
+      style="background-image: url(img/bg-img/breadcumb2.jpg)"
+    >
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+            <div class="breadcumb-text text-center">
+              <h2>Blog</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <div class="blog-area section-padding-80">
+      <div class="container">
+        <div id="add-blog-btn" class="row mb-5" style="display: none">
+          <button id="add-blog-btn" class="btn delicious-btn">Add blog</button>
+        </div>
+
+        <!--Blog form start-->
+        <div id="blog-form-container" class="mb-80" style="display: none">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-heading text-left">
+                <h3>Description of blog</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="contact-form-area">
+                <form id="blog-form" action="#" method="post">
+                  <div class="row">
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="blog-title"
+                        placeholder="Title of your blog"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        name="blog-desc"
+                        class="form-control"
+                        id="blog-desc"
+                        cols="30"
+                        rows="10"
+                        placeholder="Share your thoughts"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <label for="blog-image">Upload a photo</label>
+                      <input
+                        type="file"
+                        class="form-control-file"
+                        id="blog-image"
+                        accept="image/*"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <button class="btn delicious-btn mt-30" type="submit">
+                        Post blog
+                      </button>
+                      <button
+                        id="cancel-post-blog"
+                        class="btn delicious-btn mt-30 ml-2"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Blog form end-->
+
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <div class="row">
+              <div id="blog-posts-area" class="blog-posts-area"></div>
+            </div>
+
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item active">
+                  <a class="page-link" href="#">01.</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">02.</a></li>
+                <li class="page-item"><a class="page-link" href="#">03.</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="blog-sidebar-area">
+              <!-- Widget -->
+              <div class="single-widget mb-80">
+                <h6>Archive</h6>
+                <ul class="list">
+                  <li><a href="#">March 2018</a></li>
+                  <li><a href="#">February 2018</a></li>
+                  <li><a href="#">January 2018</a></li>
+                  <li><a href="#">December 2017</a></li>
+                  <li><a href="#">November 2017</a></li>
+                </ul>
+              </div>
+
+              <!-- Widget -->
+              <div class="single-widget mb-80">
+                <h6>Categories</h6>
+                <ul class="list">
+                  <li><a href="#">Restaurants</a></li>
+                  <li><a href="#">Food &amp; Drinks</a></li>
+                  <li><a href="#">Vegans</a></li>
+                  <li><a href="#">Events &amp; Lifestyle</a></li>
+                  <li><a href="#">Uncategorized</a></li>
+                </ul>
+              </div>
+
+              <!-- Widget -->
+              <div class="single-widget mb-80">
+                <h6>Newsletter</h6>
+
+                <!-- Form -->
+                <div
+                  class="newsletter-form bg-img bg-overlay"
+                  style="background-image: url(img/bg-img/bg1.jpg)"
+                >
+                  <form action="#" method="post">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Subscribe to newsletter"
+                    />
+                    <button type="submit" class="btn delicious-btn w-100">
+                      Subscribe
+                    </button>
+                  </form>
+                  <p>
+                    Fusce nec ante vitae lacus aliquet vulputate. Donec sceleri
+                    sque accumsan molestie. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Widget -->
+              <div class="single-widget mb-80">
+                <div class="quote-area text-center">
+                  <span>"</span>
+                  <h4>
+                    Nothing is better than going home to family and eating good
+                    food and relaxing
+                  </h4>
+                  <p>John Smith</p>
+                  <div class="date-comments d-flex justify-content-between">
+                    <div class="date">January 04, 2018</div>
+                    <div class="comments">2 Comments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ##### Blog Area End ##### -->
+
+    <!-- ##### Follow Us Instagram Area Start ##### -->
+    <div class="follow-us-instagram">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5>Follow Us Instragram</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Instagram Feeds -->
+      <div class="insta-feeds d-flex flex-wrap">
+        <!-- Single Insta Feeds -->
+        <div class="single-insta-feeds">
+          <img src="img/bg-img/insta1.jpg" alt="" />
+          <!-- Icon -->
+          <div class="insta-icon">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Insta Feeds -->
+        <div class="single-insta-feeds">
+          <img src="img/bg-img/insta2.jpg" alt="" />
+          <!-- Icon -->
+          <div class="insta-icon">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Insta Feeds -->
+        <div class="single-insta-feeds">
+          <img src="img/bg-img/insta3.jpg" alt="" />
+          <!-- Icon -->
+          <div class="insta-icon">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Insta Feeds -->
+        <div class="single-insta-feeds">
+          <img src="img/bg-img/insta4.jpg" alt="" />
+          <!-- Icon -->
+          <div class="insta-icon">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Insta Feeds -->
+        <div class="single-insta-feeds">
+          <img src="img/bg-img/insta5.jpg" alt="" />
+          <!-- Icon -->
+          <div class="insta-icon">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Insta Feeds -->
+        <div class="single-insta-feeds">
+          <img src="img/bg-img/insta6.jpg" alt="" />
+          <!-- Icon -->
+          <div class="insta-icon">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Insta Feeds -->
+        <div class="single-insta-feeds">
+          <img src="img/bg-img/insta7.jpg" alt="" />
+          <!-- Icon -->
+          <div class="insta-icon">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ##### Follow Us Instagram Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div
+            class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between"
+          >
+            <!-- Footer Social Info -->
+            <div class="footer-social-info text-right">
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+              <a href="index.html"
+                ><img src="img/core-img/logo.png" alt=""
+              /></a>
+            </div>
+            <!-- Copywrite -->
+            <p>Copyright &copy; 2025 All rights reserved | TastyLib</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/blog-post.js"></script>
+  </body>
+</html>
