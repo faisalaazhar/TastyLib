@@ -119,23 +119,24 @@ document.addEventListener('DOMContentLoaded', () => {
       .filter(Boolean);
 
     // Upload image (if any)
-    let imageUrl = 'img/bg-img/bg3.jpg';
+    // let imageUrl = 'img/bg-img/bg3.jpg';
+    let imageUrl = '';
     const fileInput = document.getElementById('recipe-image');
     const file = fileInput.files[0];
-    // if (file) {
-    //   const imgPath = `recipes/${auth.currentUser.uid}/${Date.now()}_${
-    //     file.name
-    //   }`;
-    //   const imgRef = storageRef(storage, imgPath);
-    //   try {
-    //     await uploadBytes(imgRef, file);
-    //     imageUrl = await getDownloadURL(imgRef);
-    //   } catch (err) {
-    //     console.error('Image upload failed:', err);
-    //     alert('Could not upload image. Please try again.');
-    //     return;
-    //   }
-    // }
+    if (file) {
+      const imgPath = `recipes/${auth.currentUser.uid}/${Date.now()}_${
+        file.name
+      }`;
+      const imgRef = storageRef(storage, imgPath);
+      try {
+        await uploadBytes(imgRef, file);
+        imageUrl = await getDownloadURL(imgRef);
+      } catch (err) {
+        console.error('Image upload failed:', err);
+        alert('Could not upload image. Please try again.');
+        return;
+      }
+    }
 
     // Write to Firestore
     try {
