@@ -180,40 +180,26 @@
           <div class="row">
             <div class="col-12">
               <div class="contact-form-area">
-                <form action="#" method="post">
+                <form id="recipe-comment-form" action="#" method="post">
                   <div class="row">
                     <div class="col-12 col-lg-6">
                       <input
-                        type="text"
+                        type="number"
                         class="form-control"
-                        id="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="E-mail"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Subject"
+                        id="recipe-rating"
+                        min="0"
+                        max="5"
+                        placeholder="Rating fom 1-5"
                       />
                     </div>
                     <div class="col-12">
                       <textarea
                         name="message"
                         class="form-control"
-                        id="message"
+                        id="recipe-comment"
                         cols="30"
                         rows="10"
-                        placeholder="Message"
+                        placeholder="Comment"
                       ></textarea>
                     </div>
                     <div class="col-12">
