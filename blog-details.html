@@ -163,7 +163,7 @@
     <!-- ##### Breadcumb Area End ##### -->
 
     <div class="blog-detail-area container my-5" id="blog-detail-container"></div>
-
+    <div id="comments-container" class="container my-5"></div>
       <!-- Receipe Content Area -->
       <div class="receipe-content-area my-5">
         <div class="container">
@@ -178,40 +178,16 @@
           <div class="row">
             <div class="col-12">
               <div class="contact-form-area">
-                <form action="#" method="post">
+                <form id="blog-comment-form" action="#" method="post">
                   <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="E-mail"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Subject"
-                      />
-                    </div>
                     <div class="col-12">
                       <textarea
                         name="message"
                         class="form-control"
-                        id="message"
+                        id="comment-text"
                         cols="30"
                         rows="10"
-                        placeholder="Message"
+                        placeholder="Comment"
                       ></textarea>
                     </div>
                     <div class="col-12">

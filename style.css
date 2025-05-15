@@ -1,14 +1,6 @@
-/* [Master Stylesheet v1.0]
-
-- Template Name: Delicious - Food Blog Template
-- Template Author: Colorlib
-- Template URL: colorlib.com
-- Version: 1.0.0
-
-*/
-/* :: 1.0 Import Fonts */
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-/* :: 2.0 Import All CSS */
+/* Import All CSS */
 @import url(css/bootstrap.min.css);
 @import url(css/owl.carousel.min.css);
 @import url(css/animate.css);
@@ -17,7 +9,7 @@
 @import url(css/custom-icon.css);
 @import url(css/classy-nav.min.css);
 @import url(css/nice-select.min.css);
-/* :: 3.0 Base CSS */
+/* Base CSS */
 * {
   margin: 0;
   padding: 0;
